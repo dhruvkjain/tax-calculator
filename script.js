@@ -11,14 +11,14 @@ submit_btn.addEventListener('click',(e)=>{
     document.getElementsByClassName('final_output')[0].classList.remove('final_output_show');
     
     let err = false;
-    if( formData.get('gai') == null || isNaN(formData.get('gai')) || formData.get('gai') == ""){
+    if( formData.get('gai') == null || isNaN(formData.get('gai')) || formData.get('gai') == "" || formData.get('gai') < 0){
         
         document.getElementsByClassName('error_message')[0].classList.add('error_message_show');
         // console.log('error in gai');
         // console.log(formData.get('gai'));
         err = true;
     }
-    if(formData.get('ei') == null || isNaN(formData.get('ei')) || formData.get('ei') == ""){
+    if(formData.get('ei') == null || isNaN(formData.get('ei')) || formData.get('ei') == "" || formData.get('ei') < 0){
         document.getElementsByClassName('error_message')[1].classList.add('error_message_show');
         err = true;
     }
@@ -26,7 +26,7 @@ submit_btn.addEventListener('click',(e)=>{
         document.getElementsByClassName('error_message')[2].classList.add('error_message_show');
         err = true;
     }
-    if(formData.get('deduct') == null || isNaN(formData.get('deduct')) || formData.get('deduct') == "" ){
+    if(formData.get('deduct') == null || isNaN(formData.get('deduct')) || formData.get('deduct') == "" || formData.get('deduct') < 0){
         document.getElementsByClassName('error_message')[3].classList.add('error_message_show');
         err = true;
     }

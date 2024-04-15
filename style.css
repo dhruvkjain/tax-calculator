@@ -1,0 +1,231 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('./patternpad.png');
+}
+
+form {
+    padding: 20px;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+}
+
+.form_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+input {
+    width: 35vw;
+    min-width: 250px;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: beige;
+    box-shadow: 4px 4px black;
+    font-size: 15px;
+    font-weight: 600;
+    color: #323232;
+    padding: 5px 10px;
+    outline: none;
+    margin: 0px 0px 20px 0px;
+}
+
+input::placeholder {
+    color: #666;
+    opacity: 0.8;
+}
+
+input:focus {
+    border: 2px solid #2d8cf0;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    color: var(#323232);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    display: flex;
+    position: relative;
+}
+
+.help_svg {
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.error_message {
+    margin: 0px;
+    padding: 5px 0px 0px 5px;
+    color: rgb(255, 75, 75);
+    opacity: 0;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.error_message_show {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.input_field {
+    display: flex;
+    justify-content: center;
+}
+
+.submit_btn {
+    margin: 10px auto 0 auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: beige;
+    box-shadow: 4px 4px black;
+    font-size: 17px;
+    font-weight: 600;
+    color: #323232;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.tooltip1 {
+    position: absolute;
+    top: -180%;
+    /* Adjusted top position */
+    left: 55.5%;
+    /* transform: translateX(-50%); */
+    padding: 0.5em;
+    display: none;
+    /* opacity: 0; */
+    pointer-events: none;
+    transition: all 0.3s;
+    background: #6e7681;
+    color: white;
+    border-radius: 5px;
+    width: 210px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.tooltip1::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: #6e7681;
+}
+
+.input1_help:hover .tooltip1 {
+    /* opacity: 1; */
+    display: block;
+}
+
+.left-40{
+    left: 40%;
+}
+
+.left-32{
+    left: 32%;
+}
+
+.left-64{
+    left: 64%;
+}
+
+.tooltip2 {
+    position: absolute;
+    top: -58%;
+    /* Adjusted top position */
+    right: -213.5%;
+    /* transform: translateX(-50%); */
+    padding: 0.5em;
+    display: none;
+    /* opacity: 0; */
+    pointer-events: none;
+    transition: all 0.3s;
+    background: #6e7681;
+    color: white;
+    border-radius: 5px;
+    width: 190px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tooltip2::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: #6e7681;
+}
+
+.error_message:hover .tooltip2 {
+    /* opacity: 1; */
+    display: block;
+}
+
+
+
+
+
+
+
+.final_output{
+    position: absolute;
+    top: 0;
+    height: 100lvh;
+    width: 100%;
+    display: none;
+}
+
+.final_output_show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: block; */
+    backdrop-filter: blur(4px);
+}
+
+.output_tax{
+    padding: 20px;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+}
